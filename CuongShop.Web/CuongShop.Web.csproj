@@ -254,6 +254,24 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CuongShop.Common\CuongShop.Common.csproj">
+      <Project>{ce4925e9-19bb-46f0-ad44-8a213a8acb1f}</Project>
+      <Name>CuongShop.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CuongShop.Data\CuongShop.Data.csproj">
+      <Project>{b11dd357-3557-4159-bf78-5b20d9b19b25}</Project>
+      <Name>CuongShop.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CuongShop.Model\CuongShop.Model.csproj">
+      <Project>{73a64aba-b6bf-45c0-88d8-8c3a56bb5e4b}</Project>
+      <Name>CuongShop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CuongShop.Service\CuongShop.Service.csproj">
+      <Project>{1b427647-13b8-48a3-9fab-25db05461e2b}</Project>
+      <Name>CuongShop.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
