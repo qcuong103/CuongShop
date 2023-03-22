@@ -57,13 +57,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Abstract\Auditable.cs" />
+    <Compile Include="Abstract\IAuditable.cs" />
+    <Compile Include="Models\Footer.cs" />
+    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\MenuGroup.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderDetail.cs" />
+    <Compile Include="Models\Page.cs" />
+    <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\PostCategory.cs" />
+    <Compile Include="Models\PostTag.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductCategory.cs" />
+    <Compile Include="Models\ProductTag.cs" />
+    <Compile Include="Models\Slide.cs" />
+    <Compile Include="Models\SupportOnline.cs" />
+    <Compile Include="Models\SystemConfig.cs" />
+    <Compile Include="Models\Tag.cs" />
+    <Compile Include="Models\VisitorStatistic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CuongShop.Common\CuongShop.Common.csproj">
+      <Project>{ce4925e9-19bb-46f0-ad44-8a213a8acb1f}</Project>
+      <Name>CuongShop.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
