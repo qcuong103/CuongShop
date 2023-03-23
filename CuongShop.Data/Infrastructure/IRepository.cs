@@ -12,6 +12,8 @@ namespace CuongShop.Data.Infrastructure
         // Marks an entity as modified
         void Update(T entity);
 
+        void Delete(int id);
+
         // Marks an entity to be removed
         void Delete(T entity);
 
