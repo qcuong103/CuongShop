@@ -1,12 +1,7 @@
-﻿using System;
+﻿using CuongShop.Model.Abstract;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Security.AccessControl;
-using System.Text;
-using System.Threading.Tasks;
-using CuongShop.Model.Abstract;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CuongShop.Model.Models
 {

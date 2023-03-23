@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using CuongShop.Model.Models;
 using System.Data.Entity;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-using CuongShop.Model.Models;
 
 namespace CuongShop.Data
 {
     public class CuongShopDbContext : DbContext
     {
-        public CuongShopDbContext() : base("CuongShopConnection")
+        public CuongShopDbContext() : base("name = DatabaseEntities")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }
@@ -37,10 +31,8 @@ namespace CuongShop.Data
 
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
 
-
         protected override void OnModelCreating(DbModelBuilder builder)
         {
-
         }
     }
 }
