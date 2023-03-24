@@ -40,7 +40,6 @@ namespace CuongShop.Model.Models
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { set; get; }
 
-        [ForeignKey("TagID")]
         public virtual IEnumerable<PostTag> PostTags { set; get; }
     }
 }

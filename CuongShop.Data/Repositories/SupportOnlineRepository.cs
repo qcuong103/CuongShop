@@ -3,13 +3,13 @@ using CuongShop.Model.Models;
 
 namespace CuongShop.Data.Repositories
 {
-    public interface IPageRepository : IRepository<Page>
+    public interface ISupportOnlineRepository : IRepository<SupportOnline>
     {
     }
 
-    public class PageRepository : RepositoryBase<Page>, IPageRepository
+    public class SupportOnlineRepository : RepositoryBase<SupportOnline>, ISupportOnlineRepository
     {
-        public PageRepository(IDbFactory dbFactory) : base(dbFactory)
+        public SupportOnlineRepository(IDbFactory dbFactory) : base(dbFactory)
         {
         }
     }
