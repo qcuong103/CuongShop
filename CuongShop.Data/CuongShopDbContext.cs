@@ -5,7 +5,7 @@ namespace CuongShop.Data
 {
     public class CuongShopDbContext : DbContext
     {
-        public CuongShopDbContext() : base("name = DatabaseEntities")
+        public CuongShopDbContext() : base("name=DatabaseEntities")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }
